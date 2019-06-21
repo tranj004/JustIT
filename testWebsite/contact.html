@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title> Contact </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="product.html">Product</a></li>
+        </ul>
+
+        <h1> Contact </h1>
+
+        <form class="submit" name="contact" method="post" action="mailto:tanveer@justit.co.uk?subject=Website test" enctype="text/plain">
+            <label for="title">Title</label>
+            <select name="title">
+                <option value="Select">Select</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+            </select> <br>
+            <label for="fname">First Name:</label>
+            <input name="fname" type="text" placeholder="enter first name" required> <br>
+            <label for="lname">Last Name:</label>
+            <input name="lname" type="text" placeholder="enter last name" required> <br>
+            <label for="gender">Gender:</label>
+            Male<input type="radio" name="gender" value="male">
+            Female<input type="radio" name="gender" value="female" required> <br>
+            Age: <input type="number" name="age" min="18" max="65" required> <br>
+            Email: <input type="email" name="email" placeholder="enter email" required> <br>
+            Password: <input type="password" name="password" required> <br>
+            <textarea name="message" placeholder="enter message" rows="4" cols="50" required></textarea> <br>
+
+            <input type="submit" value="Submit" class="button">
+
+        </form>
+
+        <address>
+            30 Minories <br>
+            Tower Hill <br>
+            London <br>
+            EC3N 1DD <br>
+            Phone: <a href="tel:02052502052">02052502052</a> <br>
+            Email: <a href="mailto:askthedevexpert@justit.co.uk">Email Us</a>
+        </address>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.053437352279!2d-0.07733968469144836!3d51.512235618171296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb3a2991b2b%3A0x7db0f0cc1b2512e5!2sJust+IT+Training+and+Apprenticeships!5e0!3m2!1sen!2suk!4v1560177814689!5m2!1sen!2suk" width="1000" height="600" frameborder="0" style="border:1px solid black" allowfullscreen></iframe>
+    </div>
+    <footer> &copy; Copyright 2019 ABC</footer>
+
+</body>
+
+</html>

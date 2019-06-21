@@ -1,0 +1,354 @@
+nav {
+    background-color: #0d2526;
+    margin: 0;
+    padding: 20px;
+}
+
+nav div {
+    margin: 0 70px 0 70px;
+    display: inline;
+}
+
+nav div h3 {
+    display: inline;
+}
+
+footer {
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+}
+
+input[type="email"] {
+    margin: 0;
+    padding: 3px;
+
+}
+
+hr {
+    margin: 0;
+    border: 1px solid orangered;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+address {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+iframe {
+    width: 50%;
+    height: 80%;
+    margin: 10px;
+}
+
+.abc {
+    color: darkred;
+}
+
+.web {
+    color: white;
+}
+
+.nav2 {
+    text-align: right;
+    line-height: 70px;
+    height: 70px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px 0 10px;
+    clear: right;
+}
+
+
+.menu a:hover {
+    color: goldenrod;
+}
+
+.nav2 label {
+    margin: 0 40px 0 0;
+    font-size: 20px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    color: white;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+#current {
+    color: goldenrod;
+}
+
+#header {
+    margin: 0px;
+    padding: 20px;
+    background-image: url(../images/space.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#header p {
+    font-size: 20px;
+}
+
+#header h1,
+#header p {
+    color: orangered;
+    text-align: center;
+}
+
+.subscribe {
+    background-color: #0d2526;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.subscribe p {
+    font-size: 20px;
+    display: inline;
+    color: white;
+    margin: 0 70px;
+}
+
+.submenu {
+    position: relative;
+    left: 65%;
+    top: -20px;
+}
+
+.submenu input[type="email"] {
+    width: 20%;
+    margin-right: 2px;
+}
+
+.subscribe input {
+    display: inline-block;
+    float: left;
+}
+
+#website {
+    margin: 0;
+}
+
+#news {
+    height: 20em;
+    background-color: whitesmoke;
+    margin: 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+#aboutus {
+    float: left;
+    padding: 0 80px 0 80px;
+    width: 60%;
+}
+
+#whatwedo {
+    background-color: #0d2526;
+    color: white;
+    padding: 30px;
+    width: 20%;
+    position: relative;
+    right: 7%;
+    float: right;
+}
+
+#service {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 20px 5%;
+}
+
+#innerservice {
+    display: block;
+    height: auto;
+    width: 50%;
+    padding: 1%;
+    float: left;
+
+}
+
+#contact {
+    height: 23em;
+}
+
+.service {
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2%;
+    background-color: lightgray;
+}
+
+#serviceh4 {
+    margin: 0;
+}
+
+.submit {
+    width: 20%;
+    float: right;
+    color: white;
+    display: block;
+    padding: 1% 2%;
+    background-color: #0d2526;
+    position: relative;
+    right: 15%;
+}
+
+.submit input[type="text"],
+.submit input[type="email"] {
+    width: 250px;
+    padding: 5px;
+    margin: 3px 0;
+}
+
+textarea {
+    resize: none;
+    width: 255px;
+}
+
+.block {
+    float: left;
+    border: 2px;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.block img {
+    width: auto;
+    height: 15em;
+    display: block;
+    margin: auto;
+    align-content: center;
+    resize: both;
+}
+
+.block h4,
+.block p {
+    text-align: center;
+}
+
+.button {
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .nav2 label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        float: none;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .block {
+        float: none;
+        width: auto;
+        display: block;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav div {
+        margin: 0 10px;
+    }
+
+    .subscribe p {
+        font-size: 15px;
+        margin: 0 20px;
+    }
+
+    #news {
+        height: auto;
+        display: block;
+        padding: 20px;
+    }
+
+    #aboutus {
+        float: none;
+    }
+
+    #whatwedo {
+        float: none;
+        right: 0;
+        left: 15%;
+        width: 60%
+    }
+
+    .submit {
+        width: 58%;
+        clear: both;
+        float: none;
+        right: 0%;
+        left: 18%
+    }
+    #serviceh4{
+        margin-right: 10px;
+        text-align: center;
+    }
+    #innerservice{
+        margin-left: 15%;
+        width: 65%;
+    }
+    address{
+        width: auto;
+    }
+    iframe{
+        width: 80%;
+        margin-left: 10%
+    }
+    #contact{
+        height: auto;
+    }
+}

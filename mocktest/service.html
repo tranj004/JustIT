@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title> ABC website design </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <h3 class="abc">ABC</h3>
+            <h3 class="web"> Web Design</h3>
+        </div>
+        <div class="nav2">
+            <label for="toggle"> &#9776; </label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html" id="current">Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <hr class="clear">
+    <section class="subscribe">
+        <p>Subscribe to monthly newsletter</p>
+        <form class="submenu">
+            <input name="email" type="email" placeholder="please enter your email">
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </section>
+    <section id="service">
+        <h4 id=serviceh4>Services</h4>
+        <div id="innerservice">
+            <article class="service">
+                <aside>
+                    <h4>Website Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus mattis commodo.</p>
+                    <p>Price: £300 - £2000</p>
+                </aside>
+            </article>
+            <article class="service">
+                <aside>
+                    <h4>Website Maintenance</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus mattis commodo.</p>
+                    <p>Price: £300 per month</p>
+                </aside>
+            </article>
+            <article class="service">
+                <aside>
+                    <h4>Website Hosting</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus mattis commodo.</p>
+                    <p>Price: £5 - £20 per month</p>
+                </aside>
+            </article>
+        </div>
+        <form class="submit" name="quote" method="post" action="mailto:tanveer@justit.co.uk?subject=Website test" enctype="text/plain">
+            <h4>Get a Quote</h4>
+            <label for="name">Name:</label><br>
+            <input name="name" type="text" placeholder="please enter name" required> <br>
+            Email:<br> <input type="email" name="email" placeholder="enter email" required> <br>
+            Message: <br><textarea name="message" placeholder="enter message" rows="4" cols="50" required></textarea> <br>
+            <input type="submit" value="Submit" class="button">
+        </form>
+        <div class="clear"></div>
+    </section>
+
+    <footer>ABC Web designer and developer &copy; 2019</footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <p id="demo"> this [aragraph as ID=demo is not use to print the array item</p>
+    <br>
+    <script type="text/javascript">
+        var hour = new Date().getHours();
+
+        if (hour < 12 && hour >= 5) {
+            greeting = "Good Morning";
+        } else if (hour < 16 && hour >= 12) {
+            greeting = "Good Evening";
+        } else if (hour >= 20) {
+            greeting = "Good Night";
+        } else {
+            greeting = "Sleep Well";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+        document.write(greeting);
+
+    </script>
+</body>
+
+</html>

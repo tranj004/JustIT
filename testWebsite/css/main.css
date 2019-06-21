@@ -1,0 +1,183 @@
+.container {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    font-family: monospace, cursive, serif;
+    background-image: url("../images/background.jpg");
+    background-color: aquamarine;
+}
+
+h1 {
+    border: 2px solid Tomato;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    color: indigo;
+    background-color: slateblue;
+}
+
+.list {
+    border: 3px solid green;
+    color: blue;
+    margin: 20px;
+}
+
+/*
+.list li:first-child{
+    background-color: grey;
+}
+
+.list li:last-child{
+    background-color: aqua;
+}
+*/
+
+/*
+.list li:nth-child(odd){
+    background-color: blueviolet;
+}
+*/
+
+/*
+.list li:nth-child(even) {
+    background-color: fuchsia;
+}
+*/
+
+.list li:nth-child(3n+1) {
+    background-color: aquamarine;
+}
+
+.list li:nth-child(3n+2) {
+    background-color: lemonchiffon;
+}
+
+.list li:nth-child(3n+3) {
+    background-color: khaki;
+}
+
+#para {
+    border: 2px solid skyblue;
+    color: brown;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+#menu {
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: darkgrey;
+    text-align: right;
+    position: fixed;
+    width: 87.4%;
+    top: 0;
+}
+
+#menu li {
+    display: inline;
+}
+
+li a {
+    /*    display: block;*/
+    text-align: center;
+    text-decoration: none;
+    color: maroon;
+    padding: 20px;
+}
+
+li a:hover {
+    background-color: lawngreen;
+    color: black;
+}
+
+a img {
+    border: 1px solid #ddd;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded border */
+    padding: 5px;
+    /* Some padding */
+    width: 150px;
+    /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+a img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+table {
+    align-content: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 0px 5px;
+    background-color: lightgray
+}
+
+table td {
+    text-align: center;
+    padding: 0px 5px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: darkgoldenrod;
+}
+
+.submit {
+    margin: 0 0 10px 0;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 2.5em;
+    float: left;
+    background-color: white;
+}
+
+.submit input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+    margin: 2px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 398px;
+}
+
+address {
+    margin: 10px;
+    padding: 1em;
+    width: 150px;
+    display: block;
+    font-style: italic;
+    border: 1px solid black;
+    color: darkgreen;
+    float: right;
+}
+
+.button {
+    background-color: dimgrey;
+    color: darkred;
+    padding: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+}

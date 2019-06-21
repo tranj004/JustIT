@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <h1 id="header">Javascript programming</h1>
+    <form id="contact">
+        Name: <input type="text" name="name"> <br>
+        Age: <input type="text" name="age">
+    </form>
+    <button onclick="outputform()">Submit</button>
+    
+    <script type="text/javascript">
+    function outputform(){
+        var x, y, age;
+        x = document.getElementById("contact");
+        y = x.elements["name"].value;
+        age = x.elements["age"].value;
+        
+        document.getElementById("demo").innerHTML = "Welcome " + y + "<br>";
+        
+        document.getElementById("demo").innerHTML += y + "is a web developer. His age is " + age;
+    }
+    </script>
+    
+    <p id="demo"></p>
+</body>
+
+</html>

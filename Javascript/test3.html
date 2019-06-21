@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--this is the strings exercise -7.1 -->
+
+<head>
+</head>
+
+<body>
+    <h1>Vending Machine Change</h1>
+    <form>
+        <input type="number" placeholder="Please enter money" id="input1" />
+        <input type="button" value="submit" onclick="calculated()" />
+    </form>
+    <div id="demo"></div>
+    <script>
+        function calculated() {
+            var userinput = parseInt(document.getElementById("input1").value);
+            var money = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+            var change = [];
+            var i = 0;
+            var text1 = "";
+            change = [50, 20, 10, 5, 0.5, 0.2, 0.01]
+            for (var j = 0; change.length > j; j++) {
+                if (change[j] >= 1) {
+                     text1 += "£" + change[j] + " "; 
+                    console.log("demo");
+                } else {
+                    text1 += (change[j] * 100) + "p ";
+                }
+
+            }
+            document.getElementById("demo").innerHTML = text1;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+nav {
+    right: 0;
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    background-color: darkgrey;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: aquamarine;
+    color: crimson;
+}
+
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: 400px;
+    margin: auto;
+}
+
+address {
+    margin: 100px auto;
+    padding: 1em;
+    width: 150px;
+    display: block;
+    font-style: italic;
+    border: 1px solid black;
+    color: black;
+    float: right;
+    position: relative;
+    right: 20%;
+
+}
+
+textarea {
+    resize: none;
+    width: auto;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    font-style: italic;
+}
+
+section {
+    height: 100%;
+    width: auto;
+}
+
+
+/*
+#timeline {
+    height: 40em;
+    width: auto;
+}
+*/
+
+#container {
+    width: 75%;
+    margin: -20px auto 0px auto;
+}
+
+#innertext h2 {
+    color: blueviolet;
+}
+
+#home {
+    background: #ddd;
+    /*    margin-top: 40px;*/
+    /*    margin-top: 20px;*/
+    /*    clear: both;*/
+}
+
+#innertext {
+    height: 25vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#homeimage {
+    background-image: url(../images/ocean.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 0;
+}
+
+#news {
+    height: 100%;
+}
+
+#contact {
+    clear: both;
+}
+
+/*
+#map {
+    clear: both;
+    position: relative;
+    left: 15%;
+}
+*/
+
+
+.fix {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.header {
+    padding: 1.5rem;
+    margin: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+.caption {
+    padding: 0.6em;
+    text-align: center;
+}
+
+.block {
+    float: left;
+    border: 2px;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.submit {
+    margin: 10px 0 10px 0;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 2.5em;
+    float: left;
+    background-color: white;
+    position: relative;
+    left: 10%;
+}
+
+.submit input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+    margin: 2px;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .long {
+        width: 300px;
+        height: auto;
+    }
+
+    .submit {
+        float: none;
+        width: 80%;
+    }
+
+    #innertext {
+        height: 60vh;
+    }
+
+    #homeimage {
+        height: 40vh;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    iframe {
+        position: relative;
+        left: 15%;
+        width: auto;
+        height: auto;
+    }
+
+    address {
+        float: none;
+        margin: auto;
+        left: 1%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .block {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .long {
+        width: 300px;
+        height: auto;
+    }
+
+    .submit {
+        float: none;
+        width: 80%;
+    }
+
+    #innertext {
+        height: 60vh;
+    }
+
+    #homeimage {
+        height: 40vh;
+    }
+
+    #container {
+        width: 70%;
+        
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    iframe {
+        position: relative;
+        left: 15%;
+        width: auto;
+        height: auto;
+    }
+
+    address {
+        float: none;
+        margin: auto;
+        left: 1%;
+    }
+}
