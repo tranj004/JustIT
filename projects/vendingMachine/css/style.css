@@ -1,0 +1,53 @@
+#items {
+    align-content: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+
+#items,
+#buying,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#buy {
+    align-content: center;
+    margin: auto;
+    width: 450px;
+}
+#checkOut{
+    align-content: center;
+    margin: auto;
+    width: 650px;
+}
+#price{
+    text-align: center;
+}
+p, #totalPrice{
+    display: inline;
+}
+form {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+a img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.clear {
+    clear: both;
+}

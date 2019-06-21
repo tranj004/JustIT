@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <h1>Hangman Game</h1>
+    <div><button onclick="startGame()">Start Game</button></div>
+    <div>
+        <h3>Game Instructions</h3>
+        <ul>
+            <li>Select a letter A-Z</li>
+            <li>You have 7 incorrect guesses</li>
+        </ul>
+    </div>
+    <div id="lifes"></div>
+    <div><canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas></div>
+        <div id="word"></div>
+        <div id="buttons"></div>
+        <script src="script/startGame.js"></script>
+</body>
+
+</html>

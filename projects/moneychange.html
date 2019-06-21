@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h1>Vending Machine Change</h1>
+    <form>
+        <input type="number" placeholder="Please enter money" id="input1" />
+        <input type="button" value="submit" onclick="calculated()" />
+    </form>
+    <div id="demo"></div>
+    <script>
+        function calculated() {
+            var userinput = parseFloat(document.getElementById("input1").value);
+            var inputfix = userinput.toFixed(2);
+            var money = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+            var change = [];
+            var i = 0;
+            var result = "";
+            if (inputfix < 0.01 || inputfix > 100) {
+                document.getElementById("demo").innerHTML = "invaild amount of money must be between £1-£100";
+                return;
+            } else {
+                while (inputfix >= 0.01) {
+                    if (inputfix >= money[i]) {
+                        change.push(money[i]);
+                        inputfix -= money[i];
+                    } else {
+                        i++;
+                    }
+                }
+
+                for (var j = 0; change.length > j; j++)
+                    if (change[j] >= 1) {
+                        result += "£" + change[j] + " <br>";
+                    } else {
+                        result += (change[j] * 100) + "p <br>";
+                    }
+                document.getElementById("demo").innerHTML = result;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

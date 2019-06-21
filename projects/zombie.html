@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Zombie Survial Game</h1>
+    <input type="button" value="Start Game" onclick="gameStart()">
+    <script>
+        function gameStart() {
+            var player = {
+                strength: 0,
+                speed: 0,
+                stealth: 0
+            }
+            //            var strength = 0;
+            //            var speed = 0;
+            //            var stealth = 0;
+            alert("You woke up in alleyway to a world overrun with zombie with little memory where you come from!");
+            var name = prompt("Do you remember your name:", "Jason");
+            if (name == null || name == "") {
+                alert("While trying to remember your name, you suffer a massive headache causing you to lose focus, not noticing the zombie approaching due to the noise you are making, the zombie attack you when it close enough ending your journey before it can even begin.");
+                return;
+            } else {
+                alert("You remember your name being " + name + ". You also You also remember having a job.");
+            }
+            var job = prompt("Pick a job: Soldier, Thief, Hunter");
+            if (job == "soldier" || job == "Soldier") {
+                player.strength = 10;
+                player.speed = 5;
+                alert("You remember working as a " + job + " on the military giving you a train body with good strength and some speed.");
+            } else if (job == "thief" || job == "Thief") {
+                player.speed = 10;
+                player.stealth = 5;
+                alert("You remember being a " + job + " living in the slums has train you to be fast and sneaky.");
+            } else if (job == "hunter" || job == "Hunter") {
+                player.stealth = 10;
+                player.strength = 5;
+                alert("You remember being a " + job + " living in the wild has taught you how to blend in with your surrounding to hide your presence and strike with fatal effectives.");
+            } else {
+                alert("While trying to remember your job, you suffer a massive headache causing you to lose focus, not noticing the zombie approaching due to the noise you are making, the zombie attack you when it close enough ending your journey before it can even begin.");
+                return;
+            }
+            alert("Having remember enough to be functional you walk out of the alleyway and see a hardware store, believing that being arm is better that nothing you walk toward the store and peek inside, seeing that it clear you go in and look for a weapon of some kind.");
+            var weapon = prompt("Pick a weapon: Hammer, Axe, Knife or a Chainsaw", "Axe");
+            if (weapon == "Chainsaw" || weapon == "chainsaw") {
+                alert("You have chosen the " + weapon + " as your weapon.");
+                alert("As you pick up the " + weapon + " a zombie burst out of the backroom!");
+                alert("with a Chainsaw in your hand you feel like nothing can stop you, starting up the chainsaw you cut through the zombie like a hot knife through butter.");
+                alert("However as you turn around to leave you see a hoard of zombie attracted by the sound from the Chainsaw breaking in to the store and blocking your exit.");
+                alert("You raise your Chainsaw intending to cut your way out but just as you took your first step forward to begin a zombiecide the Chainsaw splutter to a stop having run out of power.");
+                alert("With your weapon nothing more than dead weight now you had no choice but to join the hoard as another member to wander the land till the end of eternity. ");
+                return;
+            } else if (weapon == "Hammer" || weapon == "hammer" || weapon == "Axe" || weapon == "axe" || weapon == "Knife" || weapon == "knife") {
+                alert("You have chosen the " + weapon + " as your weapon.");
+            } else {
+                alert("While trying to pick up a weapon a zombie burst out of the backroom an attack you making you join him as another guardian of the store.");
+            }
+            alert("As you pick up the " + weapon + " a zombie burst out of the backroom!");
+            var scenario1 = prompt("What do you do: (select a letter) A: Attack, B: Evade, or C: Hide");
+            if (scenario1 == 'a' || scenario1 == 'A') {
+                if (player.strength >= 10) {
+                    alert("With your mighty strength you swing your " + weapon + " and destroy the zombie.");
+                } else {
+                    alert("You swing your " + weapon + " at the zombie but lacking strength your weapon get stuck in the zombie")
+                    if (player.speed >= 10) {
+                        alert("With your greater speed you manage to pull your weapon free and get behind the zombie to attack again ending the zombie.");
+                    } else {
+                        alert("With your weapon stuck the zombie grab you an bite your neck killing you.");
+                        return;
+                    }
+                }
+            } else if (scenario1 == 'b' || scenario1 == 'B') {
+                if (player.speed >= 10) {
+                    alert("With your faster speed you evaded the zombie when it lunge at you crashing onto the floor, with the zombie down you swing your " + weapon + " at it and easily kill the zombie.");
+                } else {
+                    alert("The zombie lunge at you catching you by surprise.");
+                    if (player.stealth >= 10) {
+                        alert("You manage to dodge to the side and hide among the rubble, when you see an opportunity you stuck the zombie with your " + weapon + " ending it unlife.");
+                    } else {
+                        alert("Surprise by the zombie sudden lunge it grab you an bite your neck killing you.");
+                        return;
+                    }
+                }
+            } else if (scenario1 == 'c' || scenario1 == 'C') {
+                if (player.stealth >= 10) {
+                    alert("With your instinct as a hunter kicking in you immediately hid among the rubble, as the zombie walk past your hiding place leaving it back open to you, you strike like lighting killing it. ");
+                } else {
+                    alert("You try to quietly hide among the rubble but unfortunately you kick some object lying on the floor make a loud noise attracting the zombie attention causing it to lunge at you.");
+                    if (player.strength >= 10) {
+                        alert("With your strength you manage to overpower the zombie and knock it down giving you the chance to kill it with your " + weapon + " .");
+                    } else {
+                        alert("The zombie manage to grab you before you can react an bite your neck killing you.");
+                        return;
+                    }
+                }
+            } else {
+                alert("While hesitating on what to do the zombie attack you biting you neck and ensuring you never leave the store.");
+                return;
+            }
+
+            alert("With a weapon in hand you leave the store to find a purpose in this unforgiving world.");
+
+        }
+
+    </script>
+</body>
+
+</html>
