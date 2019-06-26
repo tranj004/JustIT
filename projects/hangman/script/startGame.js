@@ -61,8 +61,14 @@ function startGame() {
     var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    function button(letter){
+        var btn = document.createElement("button");
+        btn.innerHTML = letter;
+        btn.onclick = check(letter);
+        document.getElementById("buttons").appendChild(btn);
+    }
     for (var i = 0; i < alphabet.length; i++) {
-        document.getElementById("buttons").innerHTML += "<button>" + alphabet[i];
+        button(alphabet[i]);
     }
 
     //random word setup
@@ -77,19 +83,28 @@ function startGame() {
     document.getElementById("word").innerHTML = answer.join(" ");
     var remainLetters = chosenWord.length;
     
-    //play
-    while (remainLetters > 0) {
-
-
-
-        if (lives <= 0) {
-            alert("You have been hanged. <br> GAME OVER!");
-            break;
-        } else {
-            for (; lives > 0; lives - 1) {
-                hangman[lives - 2]
+    //check letter to word
+    function check(guess){
+        for(var i = 0; i < chosenWord.length; i++){
+            if(chosenWord[i] == guess){
+                answer[i] = guess;
             }
-
+            else{
+                
+            }
         }
     }
+    //play
+//    while (remainLetters > 0) {
+//
+//        if (lives <= 0) {
+//            alert("You have been hanged. <br> GAME OVER!");
+//            break;
+//        } else {
+//            for (; lives > 0; lives - 1) {
+//                hangman[lives - 2]
+//            }
+//
+//        }
+//    }
 }
